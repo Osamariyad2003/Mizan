@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="ميزان">
+  <rect width="512" height="512" rx="112" fill="#0a2135"/>
+  <circle cx="256" cy="256" r="176" fill="none" stroke="#ad7b2c" stroke-width="12"/>
+  <path d="M256 118v268M164 174h184M196 174l-64 116h128L196 174zm120 0-64 116h128L316 174z" fill="none" stroke="#f3e8cf" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M190 386h132" stroke="#f3e8cf" stroke-width="20" stroke-linecap="round"/>
+</svg>

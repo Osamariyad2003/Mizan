@@ -1,0 +1,30 @@
+# Core -- retrieval and indexing (no API key needed)
+numpy>=1.24
+tiktoken>=0.5          # token-accurate chunk sizing
+pypdf>=4.0             # PDF text extraction with page offsets
+
+# Dense retrieval (omit for a BM25-only install: set RAG_DENSE=0)
+torch>=2.0
+transformers>=4.40
+
+# Answer generation -- install whichever provider you use (or both)
+google-genai>=1.0      # Gemini
+anthropic>=0.40        # Claude
+
+# CLI
+typer>=0.12
+rich>=13.0
+
+# HTTP API (optional)
+fastapi>=0.110
+uvicorn>=0.27
+pydantic>=2.0
+
+# Tests
+pytest>=8.0
+
+# Regenerating docs/RAG-system-explained.pdf (optional)
+reportlab>=4.0
+arabic-reshaper>=3.0
+python-bidi==0.4.2     # pinned: later versions need a native extension
+pypdfium2>=4.0         # only for previewing rendered pages

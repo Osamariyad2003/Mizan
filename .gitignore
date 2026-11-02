@@ -1,0 +1,107 @@
+# ---------------------------------------------------------------------------
+# Secrets and local configuration
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ---------------------------------------------------------------------------
+# RAG indexes, model artefacts, and local data caches
+# ---------------------------------------------------------------------------
+.rag_index/
+.cache/
+.huggingface/
+models/
+
+# ---------------------------------------------------------------------------
+# Python bytecode, environments, packaging, and tooling
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+env/
+ENV/
+
+build/
+dist/
+downloads/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyright/
+.tox/
+.nox/
+.hypothesis/
+
+# ---------------------------------------------------------------------------
+# Coverage, profiling, and test output
+# ---------------------------------------------------------------------------
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+pytest-report.xml
+*.prof
+
+# ---------------------------------------------------------------------------
+# Logs, runtime state, and temporary files
+# ---------------------------------------------------------------------------
+*.log
+*.pid
+*.pid.lock
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+~$*
+
+# ---------------------------------------------------------------------------
+# Editors and local agent state
+# Keep .claude/launch.json: it is useful shared project configuration.
+# ---------------------------------------------------------------------------
+.idea/
+.vscode/
+.claude/settings.local.json
+.claude/worktrees/
+*.code-workspace
+
+# ---------------------------------------------------------------------------
+# Jupyter and notebooks
+# ---------------------------------------------------------------------------
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------------
+# Frontend tooling (if the web client grows into a bundled application)
+# ---------------------------------------------------------------------------
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+.parcel-cache/
+.vite/
+.next/
+.nuxt/
+out/
+
+# ---------------------------------------------------------------------------
+# Operating-system noise
+# ---------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/

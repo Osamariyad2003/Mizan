@@ -1,0 +1,181 @@
+{
+ "modules": {
+  "__init__.py": 38,
+  "__main__.py": 4,
+  "arabic.py": 273,
+  "bm25.py": 130,
+  "chunking.py": 356,
+  "cli.py": 388,
+  "config.py": 207,
+  "crossencoder.py": 100,
+  "embeddings.py": 170,
+  "generate.py": 164,
+  "legal.py": 146,
+  "llm.py": 396,
+  "loaders.py": 578,
+  "pipeline.py": 269,
+  "rerank.py": 80,
+  "retriever.py": 267,
+  "server.py": 216,
+  "store.py": 367
+ },
+ "tests": {
+  "conftest.py": 0,
+  "test_arabic.py": 27,
+  "test_legal.py": 15,
+  "test_llm.py": 36,
+  "test_rag.py": 45,
+  "test_server.py": 13,
+  "test_sources.py": 44
+ },
+ "web_lines": 342,
+ "eval_lines": 347,
+ "index": {
+  "sources": 12,
+  "chunks": 3830,
+  "tokens": 1069453,
+  "avg_chunk_tokens": 279,
+  "embedder": "BAAI/bge-m3",
+  "dim": 1024,
+  "by_format": {
+   "docx": 133,
+   "pdf": 3697
+  }
+ },
+ "index_files": {
+  "chunks.jsonl": 4976413,
+  "embeddings.npy": 15687808,
+  "meta.json": 4145
+ },
+ "extract_cache_files": 12,
+ "documents": {
+  "الدستور-الأردني-مع-كامل-التعديلات-حتى-2022.docx": {
+   "title": "الدستور-الأردني-مع-كامل-التعديلات-حتى-2022",
+   "chunks": 133,
+   "format": "docx",
+   "repaired_order": false
+  },
+  "قانون_التجارة_رقم_12_لسنة_1966_.pdf": {
+   "title": "قانون التجارة",
+   "chunks": 409,
+   "format": "pdf",
+   "repaired_order": false
+  },
+  "قسطاس (1).pdf": {
+   "title": "قانون الشركات لسنة 1997",
+   "chunks": 334,
+   "format": "pdf",
+   "repaired_order": true
+  },
+  "قسطاس (10).pdf": {
+   "title": "قانون البينات لسنة 1952",
+   "chunks": 75,
+   "format": "pdf",
+   "repaired_order": true
+  },
+  "قسطاس (2).pdf": {
+   "title": "قسطاس (2)",
+   "chunks": 240,
+   "format": "pdf",
+   "repaired_order": true
+  },
+  "قسطاس (3).pdf": {
+   "title": "قانون تشكيل المحاكم النظامية لسنة 2001",
+   "chunks": 27,
+   "format": "pdf",
+   "repaired_order": true
+  },
+  "قسطاس (4).pdf": {
+   "title": "نظام التأمين الو للمركبات لسنة 2010",
+   "chunks": 22,
+   "format": "pdf",
+   "repaired_order": true
+  },
+  "قسطاس (5).pdf": {
+   "title": "القانون المدني لسنة 1976",
+   "chunks": 1450,
+   "format": "pdf",
+   "repaired_order": true
+  },
+  "قسطاس (6).pdf": {
+   "title": "قانون اصول المحاكمات الجزائية لسنة 1961",
+   "chunks": 379,
+   "format": "pdf",
+   "repaired_order": true
+  },
+  "قسطاس (8).pdf": {
+   "title": "قانون العقوبات لسنة 1960",
+   "chunks": 489,
+   "format": "pdf",
+   "repaired_order": true
+  },
+  "قسطاس (9).pdf": {
+   "title": "قانون التنفيذ لسنة 2007",
+   "chunks": 124,
+   "format": "pdf",
+   "repaired_order": true
+  },
+  "قسطاس.pdf": {
+   "title": "قانون العمل لسنة 1996",
+   "chunks": 148,
+   "format": "pdf",
+   "repaired_order": true
+  }
+ },
+ "article_chunks": 3818,
+ "config": {
+  "index_dir": ".rag_index",
+  "chunk_tokens": "512",
+  "chunk_overlap_tokens": "64",
+  "min_chunk_chars": "80",
+  "article_chunks": "True",
+  "article_pack_tokens": "0",
+  "context_headers": "True",
+  "embed_model": "BAAI/bge-m3",
+  "embed_batch_size": "16",
+  "embed_max_tokens": "512",
+  "embed_device": "auto",
+  "embed_pooling": "auto",
+  "embed_query_prefix": "query: ",
+  "embed_passage_prefix": "passage: ",
+  "top_k": "12",
+  "context_tokens": "4000",
+  "candidate_k": "30",
+  "rrf_k": "60",
+  "dense_weight": "1.0",
+  "lexical_weight": "1.0",
+  "use_mmr": "True",
+  "mmr_lambda": "0.7",
+  "min_score": "0.0",
+  "rerank": "True",
+  "reranker": "local",
+  "reranker_model": "BAAI/bge-reranker-v2-m3",
+  "rerank_candidates": "20",
+  "reranker_batch_size": "8",
+  "reranker_max_tokens": "512",
+  "reranker_quantize": "True",
+  "llm_provider": "auto",
+  "model": "",
+  "max_tokens": "16000",
+  "effort": "medium",
+  "stream": "True",
+  "cache_context": "True",
+  "retry_attempts": "2",
+  "retry_initial_seconds": "1.5"
+ },
+ "versions": {
+  "torch": "2.11.0",
+  "transformers": "5.5.4",
+  "pypdf": "6.18.1",
+  "numpy": "2.4.4",
+  "tiktoken": "0.13.0",
+  "fastapi": "0.136.0",
+  "typer": "0.24.1",
+  "rich": "13.9.4",
+  "google-genai": "2.25.0",
+  "anthropic": "0.86.0",
+  "pytest": "9.1.1",
+  "reportlab": "5.0.1"
+ },
+ "python": "3.12.10"
+}

@@ -1,0 +1,25 @@
+# Normalize text files across Windows, macOS, and Linux.
+* text=auto
+
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.txt text eol=lf
+
+# Documents and model/index data are binary.
+*.pdf binary
+*.doc binary
+*.docx binary
+*.npy binary
+*.npz binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary

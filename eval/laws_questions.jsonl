@@ -1,0 +1,54 @@
+# Retrieval test set for the Jordanian-law corpus in documents\.
+# A hit requires BOTH: the chunk comes from expected_source (a filename substring)
+# AND contains expected_text (compared after Arabic normalization).
+# expected_text is a phrase from the article that answers the question.
+# Renaming a file in documents\ means updating expected_source here.
+{"kind": "ar", "question": "كم عدد أيام الإجازة السنوية التي يستحقها العامل؟", "expected_source": "قسطاس.pdf", "expected_text": "اجازة سنوية بأجر كامل لمدة أربعة عشر يوما", "match": "all"}
+{"kind": "ar", "question": "ما مدة إجازة الأمومة للمرأة العاملة؟", "expected_source": "قسطاس.pdf", "expected_text": "مجموع مدتها عشرة أسابيع", "match": "all"}
+{"kind": "ar", "question": "ما هو أقل عمر مسموح به لتشغيل الأطفال؟", "expected_source": "قسطاس.pdf", "expected_text": "لم يكمل السادسة عشرة من عمره", "match": "all"}
+{"kind": "ar", "question": "من هو الحدث حسب قانون العمل؟", "expected_source": "قسطاس.pdf", "expected_text": "بلغ السابعة من عمره ولم يتم الثامنة عشرة", "match": "all"}
+{"kind": "ar", "question": "هل يجوز تشغيل من هم دون الثامنة عشرة في أعمال خطرة؟", "expected_source": "قسطاس.pdf", "expected_text": "في الاعمال الخطرة او المرهقة", "match": "all"}
+{"kind": "ar", "question": "ما الأوراق المطلوبة من الحدث قبل توظيفه؟", "expected_source": "قسطاس.pdf", "expected_text": "صورة مصدقة عن شهادة الميلاد", "match": "all"}
+{"kind": "ar", "question": "كم ساعة يعمل العامل في اليوم كحد أقصى؟", "expected_source": "قسطاس.pdf", "expected_text": "اكثر من ثماني ساعات يوميا", "match": "all"}
+{"kind": "ar", "question": "هل يصبح الشخص تاجرا إذا أعلن عن محله في الصحف؟", "expected_source": "قانون_التجارة", "expected_text": "كل من اعلن في الصحف", "match": "all"}
+{"kind": "ar", "question": "هل يعتبر تاجرا من قام بعملية تجارية مرة واحدة؟", "expected_source": "قانون_التجارة", "expected_text": "لا يعد تاجرا من قام بمعاملة تجارية عرضا", "match": "all"}
+{"kind": "ar", "question": "ما هي البيانات الإلزامية في الشيك؟", "expected_source": "قانون_التجارة", "expected_text": "يشتمل الشيك على البيانات الآتية", "match": "all"}
+{"kind": "ar", "question": "هل يجوز كتابة شيك بدون رصيد في البنك؟", "expected_source": "قانون_التجارة", "expected_text": "لا يجوز اصدار شيك ما لم يكن للساحب", "match": "all"}
+{"kind": "ar", "question": "ما أنواع الشركات التي يجوز تسجيلها في الأردن؟", "expected_source": "قسطاس (1)", "expected_text": "تقسم الشركات التي يتم تسجيلها", "match": "all"}
+{"kind": "ar", "question": "كم شريكا يلزم لتأسيس شركة ذات مسؤولية محدودة؟", "expected_source": "قسطاس (1)", "expected_text": "تتألف الشركة ذات المسؤولية المحدودة من شخصين أو أكثر", "match": "all"}
+{"kind": "ar", "question": "ما هي اللغة الرسمية للدولة؟", "expected_source": "الدستور", "expected_text": "واللغة العربية لغتها الرسمية", "match": "all"}
+{"kind": "ar", "question": "هل يوجد تمييز بين الأردنيين بسبب الدين أو العرق؟", "expected_source": "الدستور", "expected_text": "الاردنيون أمام القانون سواء", "match": "all"}
+{"kind": "ar", "question": "هل حرية التعبير مكفولة في الأردن؟", "expected_source": "الدستور", "expected_text": "تكفل الدولة حرية الرأي", "match": "all"}
+{"kind": "ar", "question": "من هو رئيس الدولة؟", "expected_source": "الدستور", "expected_text": "الملك هو رأس الدولة", "match": "all"}
+{"kind": "ar", "question": "ممن يتكون البرلمان الأردني؟", "expected_source": "الدستور", "expected_text": "ويتألف مجلس الامة من مجلسي الاعيان والنواب", "match": "all"}
+{"kind": "ar", "question": "في أي عمر يصبح الملك راشدا؟", "expected_source": "الدستور", "expected_text": "يبلغ الملك سن الرشد", "match": "all"}
+{"kind": "ar", "question": "من لا يحق له أن يكون عضوا في مجلس النواب؟", "expected_source": "الدستور", "expected_text": "لا يكون عضواً في مجلسي الاعيان والنواب", "match": "all"}
+{"kind": "ar", "question": "هل يسمح القانون بتعذيب الموقوفين؟", "expected_source": "الدستور", "expected_text": "ولا يجوز تعذيبه", "match": "all"}
+{"kind": "ar", "question": "ما هو تعريف العقد في القانون المدني؟", "expected_source": "قسطاس (5)", "expected_text": "ارتباط الايجاب الصادر من احد المتعاقدين", "match": "all"}
+{"kind": "ar", "question": "من يتحمل تعويض الضرر الذي يلحق بشخص آخر؟", "expected_source": "قسطاس (5)", "expected_text": "كل اضرار بالغير يلزم فاعله", "match": "all"}
+{"kind": "ar", "question": "كيف يتم إثبات الولادة والوفاة؟", "expected_source": "قسطاس (5)", "expected_text": "تثبت الولادة والوفاة بالسجلات الرسمية", "match": "all"}
+{"kind": "ar", "question": "متى يعتبر الشخص مفقودا؟", "expected_source": "قسطاس (5)", "expected_text": "من غاب بحيث لا يعلم حي هو ام ميت", "match": "all"}
+{"kind": "ar", "question": "ما الفرق بين القرابة المباشرة وغير المباشرة؟", "expected_source": "قسطاس (5)", "expected_text": "القرابة المباشرة هي الصلة ما بين الاصول والفروع", "match": "all"}
+{"kind": "ar", "question": "هل يمكن سجن شخص لأنه لم يسدد دينا من عقد؟", "expected_source": "قسطاس (9)", "expected_text": "لا يجوز حبس المدين إذا عجز عن الوفاء بالتزام تعاقدي", "match": "all"}
+{"kind": "ar", "question": "ما أقصى مدة لحبس المدين خلال السنة؟", "expected_source": "قسطاس (9)", "expected_text": "مهما تعدد الدائنون", "match": "all"}
+{"kind": "ar", "question": "من هم الأشخاص الذين لا يجوز حبسهم بسبب الدين؟", "expected_source": "قسطاس (9)", "expected_text": "لا يجوز الحبس لاي من", "match": "all"}
+{"kind": "ar", "question": "ما هي وسائل الإثبات أمام المحاكم؟", "expected_source": "قسطاس (10)", "expected_text": "تقسم البينات الى", "match": "all"}
+{"kind": "ar", "question": "هل يستطيع القاضي الحكم بناء على معرفته الخاصة؟", "expected_source": "قسطاس (10)", "expected_text": "ليس لقاض أن يحكم بعلمه الشخصي", "match": "all"}
+{"kind": "ar", "question": "هل الإيميل دليل مقبول في المحكمة؟", "expected_source": "قسطاس (10)", "expected_text": "لرسائل البريد الالكتروني قوة السندات العادية", "match": "all"}
+{"kind": "ar", "question": "هل تدفع شركة التأمين تعويضا للمتضرر من حادث سيارة؟", "expected_source": "قسطاس (4)", "expected_text": "تلتزم شركة التأمين بتعويض المتضرر", "match": "all"}
+{"kind": "ar", "question": "من هو المتضرر في نظام التأمين الإلزامي؟", "expected_source": "قسطاس (4)", "expected_text": "أي شخص تعرض للضرر بسبب الحادث", "match": "all"}
+{"kind": "ar", "question": "ما المقصود بالعقار في قانون الملكية العقارية؟", "expected_source": "قسطاس (2)", "expected_text": "والبناء المقام عليها وأي حصة شائعة", "match": "all"}
+{"kind": "ar", "question": "ما هو تعريف الشقة؟", "expected_source": "قسطاس (2)", "expected_text": "وحدة مستقلة من طابق أو أكثر", "match": "all"}
+{"kind": "ar", "question": "هل يحق للمشتكى عليه رفض الإجابة إلا بوجود محام؟", "expected_source": "قسطاس (6)", "expected_text": "من حقه ان لا يجيب عنها الا بحضور محام", "match": "all"}
+{"kind": "ar", "question": "متى يجب إبلاغ الشهود بموعد الاستماع لهم؟", "expected_source": "قسطاس (6)", "expected_text": "تبلغ مذكرات الدعوة للشهود", "match": "all"}
+{"kind": "ar", "question": "ما عقوبة الموظف الذي يقبل رشوة؟", "expected_source": "قسطاس (8)", "expected_text": "هدية او وعدا او اية منفعة اخرى", "match": "all"}
+{"kind": "ar", "question": "ما هو تعريف السرقة؟", "expected_source": "قسطاس (8)", "expected_text": "السرقة هي أخذ مال الغير المنقول دون رضاه", "match": "all"}
+{"kind": "ar", "question": "من يرأس محكمة الصلح؟", "expected_source": "قسطاس (3)", "expected_text": "تنعقد محكمة الصلح من قاض منفرد", "match": "all"}
+{"kind": "article", "question": "ماذا تنص المادة 30 من الدستور؟", "expected_source": "الدستور", "expected_text": "الملك هو رأس الدولة", "match": "all"}
+{"kind": "article", "question": "المادة 2 من الدستور", "expected_source": "الدستور", "expected_text": "الاسلام دين الدولة", "match": "all"}
+{"kind": "article", "question": "نص المادة 11 من قانون التجارة", "expected_source": "قانون_التجارة", "expected_text": "كل من اعلن في الصحف", "match": "all"}
+{"kind": "en", "question": "How many days of annual leave does a worker get?", "expected_source": "قسطاس.pdf", "expected_text": "اجازة سنوية بأجر كامل لمدة أربعة عشر يوما", "match": "all"}
+{"kind": "en", "question": "What is the official language of the state?", "expected_source": "الدستور", "expected_text": "واللغة العربية لغتها الرسمية", "match": "all"}
+{"kind": "en", "question": "Can someone be jailed for not paying a contractual debt?", "expected_source": "قسطاس (9)", "expected_text": "لا يجوز حبس المدين إذا عجز عن الوفاء بالتزام تعاقدي", "match": "all"}
+{"kind": "en", "question": "What is the legal definition of a contract?", "expected_source": "قسطاس (5)", "expected_text": "ارتباط الايجاب الصادر من احد المتعاقدين", "match": "all"}
+{"kind": "en", "question": "What information must a cheque contain?", "expected_source": "قانون_التجارة", "expected_text": "يشتمل الشيك على البيانات الآتية", "match": "all"}

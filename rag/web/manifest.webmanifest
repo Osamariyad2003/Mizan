@@ -1,0 +1,20 @@
+{
+  "name": "ميزان للبحث القانوني الأردني",
+  "short_name": "ميزان",
+  "description": "البحث في التشريعات والوثائق الأردنية مع إجابات موثقة بالمصادر.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f5f3ed",
+  "theme_color": "#0a2135",
+  "icons": [
+    {
+      "src": "/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
